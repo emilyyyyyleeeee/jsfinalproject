@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To Do List</title>
+    <!-- <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap" rel="stylesheet">
+  </head>
+
+
+  <body class= "background">
+
+    <div class='console-container'>
+      <span id='text'></span>
+      <div class='console-underscore' id='console'>&#95;</div>
+    </div>
+    <!-- keep track -->
+    <div class="controls">
+        <h2> <strong>Press add or subtract to keep track of your tasks<3</strong>
+        </h2></div>
+        <div class="track">
+      <div class="todotasks">0</div>
+      <div class="add-1">➕</div>
+      <div class="subtract-1">➖</div>
+          </div>
+
+<div class="confetti">
+          <button class="confe" id="Confetti">Click when Completed a Task!</button>
+</div>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <div class="container-1">
+      <h1 class="title">♡Daily List♡</h1>
+      <p>
+        <label for="new-task">Add Item</label>
+        <input id="new-task" type="text">
+        <button id="button">Add</button>
+      </p>
+      <h3>To-do</h3>
+     <ul id="incomplete-tasks">
+       <li id="items-listed">
+       </li>
+     </ul>
+     <h3>Completed ✅</h3>
+     <ul id="completed-tasks">
+       <li id ="items-listed2">
+       </li>
+     </ul>
+   </div>
+
+   <div class="container-2">
+    <h1 class="title">⚠️Urgent Tasks⚠️</h1>
+    <div class="main-container">
+<div class="center-container">
+
+  <div class="top-list">
+  <div class="in-top-list">
+    <h3>❕DO NOW❕</h3>
+    </div>
+<div class="add-list"><a href="#e" onclick="add_new()"><i class="material-icons">➕</i></a>
+    </div>
+
+<!--   End top-list  -->  </div>
+<div class="new-container">
+  <table class="table">
+<tr>
+  <th>Action</th>
+  <th>Title</th>
+ <th>Date</th>
+    </tr>
+    <tr>
+    <td><select name="" id="action_select">
+ <option value="SHOPPING">SHOPPING</option>
+ <option value="WORK">WORK</option> <option value="SPORT">SPORT</option> <option value="MUSIC">MUSIC</option>
+      </select>
+<!-- End td 1 -->
+      </td>
+       <td>
+<input type="text" class="input_title_desc" />
+
+         <!-- End td 2 -->
+      </td>
+    <td>
+<select name="" class="input_description_title"  id="date_select">
+ <option value="TODAY">TODAY</option>
+ <option value="TOMORROW">TOMORROW</option>       </select>
+
+      <!-- End td 3 -->
+      </td>
+    </tr>
+<tr>
+   <th class="titl_description">Description</th>
+    </tr>
+<tr>
+
+  <td colspan="3">
+  <input type="text" class="input_description" required />
+  </td>
+    </tr>
+    <tr>
+    <td colspan="3">
+  <button class="btn_add_fin"  onclick="add_to_list()">ADD</button>
+  </td>
+    </tr>
+  </table>
+  <!--   End new-container  -->
+  </div>
+
+
+<div class="listing-container">
+<ul>
+  <li class="list_shopping li_num_0_1">
+  <div class="col_md_1_list">
+    <p>SHOPPING</p>
+    </div>
+<div class="col_md_2_list">
+    <h4>BUY SHOES</h4>
+<p>BIG CITY MALL</p>
+    </div>
+    <div class="col_md_3_list">
+<div class="cont_text_date">
+<p>TODAY</p>
+      </div>
+<div class="cont_btns_options">
+  <ul>
+
+    <li><a href="#" onclick="finish_action('0','0_1');">
+      <i class="material-icons">&#xE5CA;</i></a></li>
+  </ul>
+      </div>
+    </div>
+  </li>
+ </ul>
+</div>
+  <!--   End cont_central  -->
+  </div>
+</div>
+
+
+
+
+  <!-- Javascript Here -->
+  <script src="Todolist.js"></script>
+
+</body>
+</html>
